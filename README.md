@@ -16,9 +16,9 @@ And can use this code
       Response.Write Session("token") & "<br>"
     End if
 		createCSRFToken()
-	Else
-		errorCaptcha = "<script>alert(""Invalid Code"");</script>"
-	End if
+  Else
+    errorCaptcha = "<script>alert(""Invalid Code"");</script>"
+  End if
 %>
 
 <form id="ContactUs" name="ContactUs" method="post" action="">
