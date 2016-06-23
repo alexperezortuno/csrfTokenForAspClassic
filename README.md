@@ -10,11 +10,11 @@ And can use this code
 
 ```sh
 <%
-If Session("token") = Request.Form("_csrf_token") Then
+  If Session("token") = Request.Form("_csrf_token") Then
     If Session("token") = Request.Form("_csrf_token") Then
       Response.Write Request.Form("_csrf_token") & "<br>"
       Response.Write Session("token") & "<br>"
-		End if
+    End if
 		createCSRFToken()
 	Else
 		errorCaptcha = "<script>alert(""Invalid Code"");</script>"
