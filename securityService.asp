@@ -1,6 +1,6 @@
 <!--#include file="md5.asp"-->
 <%
-Dim md5File, pathSecurity, objMd5, cookiesVars, cookiesStr, cookiesKey, cookieVal, res
+Dim token, md5File, pathSecurity, objMd5, cookiesVars, cookiesStr, cookiesKey, cookieVal, res
 
 Function GetGUID()
     GetGUID = CreateObject("Scriptlet.TypeLib").GUID
